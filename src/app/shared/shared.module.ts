@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { AboutPageComponent } from './pages/aboutPage/aboutPage.component';
 import { HomePageComponent } from './pages/HomePage/HomePage.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -14,11 +15,13 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     SidebarComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [
     AboutPageComponent,
-    HomePageComponent
+    HomePageComponent,
+    SidebarComponent
   ]
 })
 export class SharedModule { }
