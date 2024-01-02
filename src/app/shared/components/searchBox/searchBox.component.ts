@@ -18,6 +18,7 @@ export class SearchBoxComponent {
 
   public sendValue(){
     this.onValue.emit(this.searchBoxInput.nativeElement.value)
+    this.searchBoxInput.nativeElement.value = ''
   }
 
 }
