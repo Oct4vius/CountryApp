@@ -1,5 +1,6 @@
 import { Component, ElementRef, EventEmitter, Input, Output, ViewChild } from '@angular/core';
 
+
 @Component({
   selector: 'shared-search-box',
   templateUrl: './searchBox.component.html',
@@ -17,8 +18,9 @@ export class SearchBoxComponent {
   public placeholder: string = ''
 
   public sendValue(){
+
     this.onValue.emit(this.searchBoxInput.nativeElement.value)
-    this.searchBoxInput.nativeElement.value = ''
+    
   }
 
 }
